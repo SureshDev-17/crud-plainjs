@@ -56,20 +56,6 @@ function formDataAction() {
     const rating = document.getElementById("rating").value;
     const profilePicture = document.getElementById("profilePicture").value;
 
-    if(!firstName){
-        // alert("First Name is mandatory")
-        // document.getElementById("firstName").focus()
-        document.getElementById("firstName").style.border = "2px solid red"
-        return;
-    }else{
-        document.getElementById("firstName").style.border = "none"
-    }
-
-    if(!lastName){
-        alert("Enter last name!")
-        return;
-    }
-
     let employeeObj = { firstName, lastName, salary, rating, profilePicture };
 
     employeeLists.push(employeeObj);
